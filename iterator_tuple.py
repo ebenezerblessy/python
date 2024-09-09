@@ -1,0 +1,7 @@
+my_tuple = ("ebi","blessy","angel","ebin","eby")
+my_iterator = iter(my_tuple)
+print(next(my_iterator))
+print(next(my_iterator))
+print(next(my_iterator))
+print(next(my_iterator))
+print(next(my_iterator))
