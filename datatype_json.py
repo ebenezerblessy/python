@@ -10,7 +10,7 @@ json_data = '''
     "street": "first St",
     "city": "tenkasi"
   },
-  "Trainee": null
+  "Student": null
 }
 '''
 
@@ -21,8 +21,8 @@ print("Age (Number):", data["age"])
 print("Is Employee (Boolean):", data["isEmployee"])
 print("Courses (Array):", data["courses"])
 print("Address (Object):", data["address"])
-print("Trainee (Null):", data["Trainee"])
+print("Student (Null):", data["Student"])
 
-json_string = json.dumps(data, indent=4)
-print("\nConverted JSON string:")
+json_string = json.dumps(data, indent=4, separators=(".","="))
+print("Converted JSON string:")
 print(json_string)

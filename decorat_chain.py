@@ -8,9 +8,9 @@ def star(func):
 
 def percent(func):
     def inner(*args, **kwargs):
-        print("%" * 15)
+        print("$" * 15)
         func(*args, **kwargs)
-        print("%" * 15)
+        print("$" * 15)
     return inner
 
 
