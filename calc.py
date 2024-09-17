@@ -1,43 +1,21 @@
-print("Calculator")
-print("Select operation:")
-print("1. Add")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
+print('''please Select the Operation you  want to Perfom
+      1 = Add
+      2 = Subtract
+      3 = Multiply
+      4 = Divide''')
 
+opt = int(input("Choose Operation from 1, 2, 3, 4 = "))
 
-choice = input("Enter choice (1-4): ")
+n1 = int(input("Enter a First Number        = "))
+n2 = int(input("Enter a Second Number = "))
 
-
-num1 = input("Enter first number: ")
-num2 = input("Enter second number: ")
-
-
-if not num1.replace('.', '', 1).isdigit() or not num2.replace('.', '', 1).isdigit():
-    print("Invalid input. Please enter numeric values.")
+if opt == 1:
+    print(n1, ' + ', n2, '  =  ', n1 + n2)
+elif opt == 2:
+    print(n1, ' - ', n2, '  =  ', n1 - n2)
+elif opt == 3:
+    print(n1, ' * ', n2, '  =  ', n1 * n2)
+elif opt == 4:
+    print(n1, ' / ', n2, '  =  ', n1 / n2)
 else:
-    num1 = float(num1)
-    num2 = float(num2)
-
-
-    if choice == '1':
-        result = num1 + num2
-        print(num1, "+", num2, "=", result)
-
-    elif choice == '2':
-        result = num1 - num2
-        print(num1, "-", num2, "=", result)
-
-    elif choice == '3':
-        result = num1 * num2
-        print(num1, "*", num2, "=", result)
-
-    elif choice == '4':
-        if num2 == 0:
-            print("Error! Division by zero.")
-        else:
-            result = num1 / num2
-            print(num1, "/", num2, "=", result)
-
-    else:
-        print("Invalid choice. Please select a number between 1 and 4.")
+    print('Invalid Input')
